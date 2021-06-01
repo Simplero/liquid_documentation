@@ -104,9 +104,7 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>Section drop.</p>
-
-<p>Represents a given section inside the template of a section.</p>
+<p>Represents a section of content inside a <span class='object_link'><a href="PageDrop.html" title="PageDrop (class)">PageDrop</a></span>. Each <span class='object_link'><a href="" title="SectionDrop (class)">SectionDrop</a></span> represents a “Section” in the page editor.</p>
 
 
   </div>
@@ -124,7 +122,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#id-instance_method" title="#id (instance method)">#<strong>id</strong>  &#x21d2; Object </a>
+      <a href="#id-instance_method" title="#id (instance method)">#<strong>id</strong>  &#x21d2; Integer </a>
     
 
     
@@ -144,7 +142,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute id.</p>
+<p>Returns this <span class='object_link'><a href="" title="SectionDrop (class)">SectionDrop</a></span>&#39;s id.</p>
 </div></span>
   
 </li>
@@ -153,7 +151,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#settings-instance_method" title="#settings (instance method)">#<strong>settings</strong>  &#x21d2; Object </a>
+      <a href="#settings-instance_method" title="#settings (instance method)">#<strong>settings</strong>  &#x21d2; ThemeSettingsDrop </a>
     
 
     
@@ -173,7 +171,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute settings.</p>
+<p>Returns a <span class='object_link'><a href="ThemeSettingsDrop.html" title="ThemeSettingsDrop (class)">ThemeSettingsDrop</a></span> representing this <span class='object_link'><a href="" title="SectionDrop (class)">SectionDrop</a></span>&#39;s settings.</p>
 </div></span>
   
 </li>
@@ -195,73 +193,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#additional_section_classes-instance_method" title="#additional_section_classes (instance method)">#<strong>additional_section_classes</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#blocks-instance_method" title="#blocks (instance method)">#<strong>blocks</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#blocks_count-instance_method" title="#blocks_count (instance method)">#<strong>blocks_count</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#setting_attrs-instance_method" title="#setting_attrs (instance method)">#<strong>setting_attrs</strong>(id)  &#x21d2; Object </a>
+      <a href="#additional_section_classes-instance_method" title="#additional_section_classes (instance method)">#<strong>additional_section_classes</strong>  &#x21d2; String </a>
     
 
     
@@ -276,7 +208,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Setting attributes for a setting.</p>
+<p>Returns additional HTML <tt>class</tt>es that this section should have.</p>
 </div></span>
   
 </li>
@@ -285,7 +217,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#title-instance_method" title="#title (instance method)">#<strong>title</strong>  &#x21d2; Object </a>
+      <a href="#blocks-instance_method" title="#blocks (instance method)">#<strong>blocks</strong>  &#x21d2; Array&lt;SectionBlockDrop&gt; </a>
     
 
     
@@ -299,7 +231,79 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the <span class='object_link'><a href="SectionBlockDrop.html" title="SectionBlockDrop (class)">SectionBlockDrop</a></span>s contained within this <span class='object_link'><a href="" title="SectionDrop (class)">SectionDrop</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#blocks_count-instance_method" title="#blocks_count (instance method)">#<strong>blocks_count</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the number of <span class='object_link'><a href="SectionBlockDrop.html" title="SectionBlockDrop (class)">SectionBlockDrop</a></span>s within this <span class='object_link'><a href="" title="SectionDrop (class)">SectionDrop</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setting_attrs-instance_method" title="#setting_attrs (instance method)">#<strong>setting_attrs</strong>(id)  &#x21d2; Hash{String-&gt;Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a Hash of data attributes for the page editor to use.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#title-instance_method" title="#title (instance method)">#<strong>title</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'></div></span>
   
 </li>
 
@@ -317,7 +321,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="id-instance_method">
   
-    #<strong>id</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>id</strong>  &#x21d2; <tt>Integer</tt>  <span class="extras">(readonly)</span>
   
 
   
@@ -326,13 +330,26 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute id.</p>
+<p>Returns this <span class='object_link'><a href="" title="SectionDrop (class)">SectionDrop</a></span>&#39;s id. This will be unique within a <span class='object_link'><a href="PageDrop.html" title="PageDrop (class)">PageDrop</a></span>, but different <span class='object_link'><a href="PageDrop.html" title="PageDrop (class)">PageDrop</a></span>s can reuse IDs.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
 
 </div>
 </div>
@@ -342,7 +359,7 @@
       <div class="method_details ">
   <h3 class="signature " id="settings-instance_method">
   
-    #<strong>settings</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>settings</strong>  &#x21d2; <tt><span class='object_link'><a href="ThemeSettingsDrop.html" title="ThemeSettingsDrop (class)">ThemeSettingsDrop</a></span></tt>  <span class="extras">(readonly)</span>
   
 
   
@@ -351,13 +368,26 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute settings.</p>
+<p>Returns a <span class='object_link'><a href="ThemeSettingsDrop.html" title="ThemeSettingsDrop (class)">ThemeSettingsDrop</a></span> representing this <span class='object_link'><a href="" title="SectionDrop (class)">SectionDrop</a></span>&#39;s settings.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ThemeSettingsDrop.html" title="ThemeSettingsDrop (class)">ThemeSettingsDrop</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
 
 </div>
 </div>
@@ -372,43 +402,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="additional_section_classes-instance_method">
   
-    #<strong>additional_section_classes</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="blocks-instance_method">
-  
-    #<strong>blocks</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="blocks_count-instance_method">
-  
-    #<strong>blocks_count</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="setting_attrs-instance_method">
-  
-    #<strong>setting_attrs</strong>(id)  &#x21d2; <tt>Object</tt> 
+    #<strong>additional_section_classes</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -417,20 +411,159 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Setting attributes for a setting.</p>
-
-<p>Returns a Hash mapping attributes to values.</p>
-
-<h4 id="label-Parameters">Parameters</h4>
-<ul><li>
-<p><code>id</code> - Setting ID.</p>
-</li></ul>
+<p>Returns additional HTML <tt>class</tt>es that this section should have.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="blocks-instance_method">
+  
+    #<strong>blocks</strong>  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="SectionBlockDrop.html" title="SectionBlockDrop (class)">SectionBlockDrop</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the <span class='object_link'><a href="SectionBlockDrop.html" title="SectionBlockDrop (class)">SectionBlockDrop</a></span>s contained within this <span class='object_link'><a href="" title="SectionDrop (class)">SectionDrop</a></span>. Each <span class='object_link'><a href="SectionBlockDrop.html" title="SectionBlockDrop (class)">SectionBlockDrop</a></span> represents an entry under “Content” in the page editor.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="SectionBlockDrop.html" title="SectionBlockDrop (class)">SectionBlockDrop</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="blocks_count-instance_method">
+  
+    #<strong>blocks_count</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the number of <span class='object_link'><a href="SectionBlockDrop.html" title="SectionBlockDrop (class)">SectionBlockDrop</a></span>s within this <span class='object_link'><a href="" title="SectionDrop (class)">SectionDrop</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setting_attrs-instance_method">
+  
+    #<strong>setting_attrs</strong>(id)  &#x21d2; <tt>Hash{String-&gt;Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a Hash of data attributes for the page editor to use. This should not be used directly; instead <span class='object_link'><a href="Liquid/Simplero/Filters.html#setting_attrs-instance_method" title="Liquid::Simplero::Filters#setting_attrs (method)">Liquid::Simplero::Filters#setting_attrs</a></span> should be used.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The name of the setting</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash{String-&gt;Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>]</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div>
 </div>
@@ -438,13 +571,36 @@
       <div class="method_details ">
   <h3 class="signature " id="title-instance_method">
   
-    #<strong>title</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>title</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'></div></div>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
   </div>
@@ -452,7 +608,7 @@
 </div>
 
       <div id="footer">
-  Generated on Mon May 31 14:44:23 2021 by
+  Generated on Mon May 31 21:49:07 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-2.6.6).
 </div>
