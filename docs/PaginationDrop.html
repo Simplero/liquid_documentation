@@ -101,7 +101,41 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Accessible using the <code>paginate</code> variable inside a <code>paginate</code> tag. You can use the <code>paginate</code> tag to paginate an array of items and then use the <code>paginate</code> variable inside it to access different values based on the current page. See the below example</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Pagination example</p>
+</div></p>
+      
+      <pre class="example code"><code>{% assign items = &quot;a,b,c,d,e,f,g,h&quot; | split: &#39;,&#39; %}
+{% paginate items by 3 %}
+  {% for item in items %}
+    Hey {{ item }}
+  {% endfor %}
+
+  Items per page: {{ paginate.page_size }}
+  Current page: {{ paginate.current_offset | plus: 1 }}
+  {% if paginate.next %}
+    Next url: {{ paginate.next.url ]}
+  {% endif %}
+{% endpaginate %}</code></pre>
+    
+  </div>
+
+
+</div>
 
 
 
@@ -111,7 +145,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#current_page-instance_method" title="#current_page (instance method)">#<strong>current_page</strong>  &#x21d2; Object </a>
+      <a href="#current_page-instance_method" title="#current_page (instance method)">#<strong>current_page</strong>  &#x21d2; Integer </a>
     
 
     
@@ -129,7 +163,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute current_page.</p>
+<p>Returns the current page number.</p>
 </div></span>
   
 </li>
@@ -138,7 +172,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#page_size-instance_method" title="#page_size (instance method)">#<strong>page_size</strong>  &#x21d2; Object </a>
+      <a href="#page_size-instance_method" title="#page_size (instance method)">#<strong>page_size</strong>  &#x21d2; Integer </a>
     
 
     
@@ -156,7 +190,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute page_size.</p>
+<p>Returns the maximum number of items in one page.</p>
 </div></span>
   
 </li>
@@ -165,7 +199,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#pages-instance_method" title="#pages (instance method)">#<strong>pages</strong>  &#x21d2; Object </a>
+      <a href="#pages-instance_method" title="#pages (instance method)">#<strong>pages</strong>  &#x21d2; Integer </a>
     
 
     
@@ -183,7 +217,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute pages.</p>
+<p>Returns the total numbers of pages.</p>
 </div></span>
   
 </li>
@@ -205,7 +239,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#apply_to-instance_method" title="#apply_to (instance method)">#<strong>apply_to</strong>(collection)  &#x21d2; Object </a>
+      <a href="#current_offset-instance_method" title="#current_offset (instance method)">#<strong>current_offset</strong>  &#x21d2; Integer </a>
     
 
     
@@ -219,7 +253,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the index of the starting item in the current page (0-indexed).</p>
+</div></span>
   
 </li>
 
@@ -227,7 +263,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#current_offset-instance_method" title="#current_offset (instance method)">#<strong>current_offset</strong>  &#x21d2; Object </a>
+      <a href="#items-instance_method" title="#items (instance method)">#<strong>items</strong>  &#x21d2; Integer </a>
     
 
     
@@ -241,7 +277,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the total number of items.</p>
+</div></span>
   
 </li>
 
@@ -249,7 +287,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#items-instance_method" title="#items (instance method)">#<strong>items</strong>  &#x21d2; Object </a>
+      <a href="#next-instance_method" title="#next (instance method)">#<strong>next</strong>  &#x21d2; PaginationPartDrop </a>
     
 
     
@@ -263,7 +301,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the <span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span> for the next page if available.</p>
+</div></span>
   
 </li>
 
@@ -271,7 +311,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#next-instance_method" title="#next (instance method)">#<strong>next</strong>  &#x21d2; Object </a>
+      <a href="#parts-instance_method" title="#parts (instance method)">#<strong>parts</strong>  &#x21d2; Array&lt;PaginationPartDrop&gt; </a>
     
 
     
@@ -285,7 +325,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an array of <span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span> based on the current pagination context.</p>
+</div></span>
   
 </li>
 
@@ -293,7 +335,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#parts-instance_method" title="#parts (instance method)">#<strong>parts</strong>  &#x21d2; Object </a>
+      <a href="#previous-instance_method" title="#previous (instance method)">#<strong>previous</strong>  &#x21d2; PaginationPartDrop </a>
     
 
     
@@ -307,29 +349,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#previous-instance_method" title="#previous (instance method)">#<strong>previous</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the <span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span> for the previous page if available.</p>
+</div></span>
   
 </li>
 
@@ -347,7 +369,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="current_page-instance_method">
   
-    #<strong>current_page</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>current_page</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
@@ -356,13 +378,26 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute current_page.</p>
+<p>Returns the current page number</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
 
 </div>
 </div>
@@ -372,7 +407,7 @@
       <div class="method_details ">
   <h3 class="signature " id="page_size-instance_method">
   
-    #<strong>page_size</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>page_size</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
@@ -381,13 +416,26 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute page_size.</p>
+<p>Returns the maximum number of items in one page</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
 
 </div>
 </div>
@@ -397,7 +445,7 @@
       <div class="method_details ">
   <h3 class="signature " id="pages-instance_method">
   
-    #<strong>pages</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>pages</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
@@ -406,13 +454,26 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute pages.</p>
+<p>Returns the total numbers of pages</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
 
 </div>
 </div>
@@ -425,75 +486,183 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="apply_to-instance_method">
+  <h3 class="signature first" id="current_offset-instance_method">
   
-    #<strong>apply_to</strong>(collection)  &#x21d2; <tt>Object</tt> 
-  
-
+    #<strong>current_offset</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
-</h3>
-</div>
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
     
-      <div class="method_details ">
-  <h3 class="signature " id="current_offset-instance_method">
-  
-    #<strong>current_offset</strong>  &#x21d2; <tt>Object</tt> 
-  
+<p>Returns the index of the starting item in the current page (0-indexed).</p>
 
-  
 
+  </div>
+</div>
+<div class="tags">
   
-</h3>
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="items-instance_method">
   
-    #<strong>items</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>items</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the total number of items</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="next-instance_method">
   
-    #<strong>next</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>next</strong>  &#x21d2; <tt><span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span></tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the <span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span> for the next page if available</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="parts-instance_method">
   
-    #<strong>parts</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>parts</strong>  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span>&gt;</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an array of <span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span> based on the current pagination context. Includes the parts for the first page, last page and 2 pages before &amp; after the current page. Also include placeholder parts (&#39;…&#39;) if the current page &gt;= 5 or there are more than 3 pages left from the current page to reach the end .</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="previous-instance_method">
   
-    #<strong>previous</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>previous</strong>  &#x21d2; <tt><span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span></tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the <span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span> for the previous page if available</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PaginationPartDrop.html" title="PaginationPartDrop (class)">PaginationPartDrop</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
   </div>
@@ -501,7 +670,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Jun 10 13:57:36 2021 by
+  Generated on Fri Jun 11 12:59:29 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-2.6.6).
 </div>

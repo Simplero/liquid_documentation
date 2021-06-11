@@ -104,7 +104,7 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>Simple attachment drop.</p>
+<p>Represents a file attachment in user-generated content.</p>
 
 
   </div>
@@ -130,7 +130,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#content_type-instance_method" title="#content_type (instance method)">#<strong>content_type</strong>  &#x21d2; Object </a>
+      <a href="#content_type-instance_method" title="#content_type (instance method)">#<strong>content_type</strong>  &#x21d2; String </a>
     
 
     
@@ -152,7 +152,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#filename-instance_method" title="#filename (instance method)">#<strong>filename</strong>  &#x21d2; Object </a>
+      <a href="#filename-instance_method" title="#filename (instance method)">#<strong>filename</strong>  &#x21d2; String </a>
     
 
     
@@ -174,7 +174,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#image%3F-instance_method" title="#image? (instance method)">#<strong>image?</strong>  &#x21d2; Object </a>
+      <a href="#image%3F-instance_method" title="#image? (instance method)">#<strong>image?</strong>  &#x21d2; Boolean </a>
     
 
     
@@ -196,7 +196,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#preview_url-instance_method" title="#preview_url (instance method)">#<strong>preview_url</strong>  &#x21d2; Object </a>
+      <a href="#preview_url-instance_method" title="#preview_url (instance method)">#<strong>preview_url</strong>  &#x21d2; String </a>
     
 
     
@@ -218,7 +218,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#size-instance_method" title="#size (instance method)">#<strong>size</strong>  &#x21d2; Object </a>
+      <a href="#size-instance_method" title="#size (instance method)">#<strong>size</strong>  &#x21d2; Integer </a>
     
 
     
@@ -240,7 +240,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#token-instance_method" title="#token (instance method)">#<strong>token</strong>  &#x21d2; Object </a>
+      <a href="#token-instance_method" title="#token (instance method)">#<strong>token</strong>  &#x21d2; String </a>
     
 
     
@@ -254,7 +254,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>A unique string representing the attachment.</p>
+</div></span>
   
 </li>
 
@@ -262,7 +264,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#url-instance_method" title="#url (instance method)">#<strong>url</strong>  &#x21d2; Object </a>
+      <a href="#url-instance_method" title="#url (instance method)">#<strong>url</strong>  &#x21d2; String </a>
     
 
     
@@ -294,85 +296,241 @@
       <div class="method_details first">
   <h3 class="signature first" id="content_type-instance_method">
   
-    #<strong>content_type</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>content_type</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="filename-instance_method">
   
-    #<strong>filename</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>filename</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="image?-instance_method">
   
-    #<strong>image?</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>image?</strong>  &#x21d2; <tt>Boolean</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="preview_url-instance_method">
   
-    #<strong>preview_url</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>preview_url</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="size-instance_method">
   
-    #<strong>size</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>size</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="token-instance_method">
   
-    #<strong>token</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>token</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A unique string representing the attachment.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="url-instance_method">
   
-    #<strong>url</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>url</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
   </div>
@@ -380,7 +538,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Jun 10 13:57:37 2021 by
+  Generated on Fri Jun 11 12:59:30 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-2.6.6).
 </div>

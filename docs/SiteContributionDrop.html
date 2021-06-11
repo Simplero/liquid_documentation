@@ -101,7 +101,18 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Represents a <span class='object_link'><a href="SiteMemberDrop.html" title="SiteMemberDrop (class)">SiteMemberDrop</a></span>&#39;s contributions to the site, e.g. <span class='object_link'><a href="SiteCommentDrop.html" title="SiteCommentDrop (class)">SiteCommentDrop</a></span>s and <span class='object_link'><a href="ForumPostDrop.html" title="ForumPostDrop (class)">ForumPostDrop</a></span>s.</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -119,7 +130,53 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#category-instance_method" title="#category (instance method)">#<strong>category</strong>  &#x21d2; Object </a>
+      <a href="#category-instance_method" title="#category (instance method)">#<strong>category</strong>  &#x21d2; BlogCategoryDrop, ForumCategoryDrop </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The category in which the contribution happened.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#contributor_name-instance_method" title="#contributor_name (instance method)">#<strong>contributor_name</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#contributor_url-instance_method" title="#contributor_url (instance method)">#<strong>contributor_url</strong>  &#x21d2; String </a>
     
 
     
@@ -163,7 +220,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#description-instance_method" title="#description (instance method)">#<strong>description</strong>  &#x21d2; Object </a>
+      <a href="#description-instance_method" title="#description (instance method)">#<strong>description</strong>  &#x21d2; String </a>
     
 
     
@@ -177,7 +234,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Description of activity when not viewed by the same <span class='object_link'><a href="SiteMemberDrop.html" title="SiteMemberDrop (class)">SiteMemberDrop</a></span>.</p>
+</div></span>
   
 </li>
 
@@ -251,7 +310,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#timestamp-instance_method" title="#timestamp (instance method)">#<strong>timestamp</strong>  &#x21d2; Object </a>
+      <a href="#timestamp-instance_method" title="#timestamp (instance method)">#<strong>timestamp</strong>  &#x21d2; Date </a>
     
 
     
@@ -273,7 +332,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#title-instance_method" title="#title (instance method)">#<strong>title</strong>  &#x21d2; Object </a>
+      <a href="#title-instance_method" title="#title (instance method)">#<strong>title</strong>  &#x21d2; String </a>
     
 
     
@@ -295,7 +354,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#type-instance_method" title="#type (instance method)">#<strong>type</strong>  &#x21d2; Object </a>
+      <a href="#type-instance_method" title="#type (instance method)">#<strong>type</strong>  &#x21d2; String </a>
     
 
     
@@ -309,7 +368,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>The type of contribution, one of: <code>forum_post</code>, <code>forum_post_comment</code>, <code>forum_post_reply</code>, <code>blog_post_comment</code>, <code>blog_post_comment_reply</code>.</p>
+</div></span>
   
 </li>
 
@@ -349,13 +410,105 @@
       <div class="method_details first">
   <h3 class="signature first" id="category-instance_method">
   
-    #<strong>category</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>category</strong>  &#x21d2; <tt><span class='object_link'><a href="BlogCategoryDrop.html" title="BlogCategoryDrop (class)">BlogCategoryDrop</a></span></tt>, <tt><span class='object_link'><a href="ForumCategoryDrop.html" title="ForumCategoryDrop (class)">ForumCategoryDrop</a></span></tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The category in which the contribution happened.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="BlogCategoryDrop.html" title="BlogCategoryDrop (class)">BlogCategoryDrop</a></span></tt>, <tt><span class='object_link'><a href="ForumCategoryDrop.html" title="ForumCategoryDrop (class)">ForumCategoryDrop</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="contributor_name-instance_method">
+  
+    #<strong>contributor_name</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="contributor_url-instance_method">
+  
+    #<strong>contributor_url</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
@@ -373,13 +526,37 @@
       <div class="method_details ">
   <h3 class="signature " id="description-instance_method">
   
-    #<strong>description</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>description</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description of activity when not viewed by the same <span class='object_link'><a href="SiteMemberDrop.html" title="SiteMemberDrop (class)">SiteMemberDrop</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
@@ -421,37 +598,105 @@
       <div class="method_details ">
   <h3 class="signature " id="timestamp-instance_method">
   
-    #<strong>timestamp</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>timestamp</strong>  &#x21d2; <tt>Date</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Date</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="title-instance_method">
   
-    #<strong>title</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>title</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="type-instance_method">
   
-    #<strong>type</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>type</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The type of contribution, one of: <code>forum_post</code>, <code>forum_post_comment</code>, <code>forum_post_reply</code>, <code>blog_post_comment</code>, <code>blog_post_comment_reply</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
@@ -471,7 +716,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Jun 10 13:57:37 2021 by
+  Generated on Fri Jun 11 12:59:30 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-2.6.6).
 </div>

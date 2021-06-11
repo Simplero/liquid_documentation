@@ -109,9 +109,7 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>Memoized navigation list link drop.</p>
-
-<p>Uses a shared array of NavListLinks to avoid executing queryes for each tree node.</p>
+<p>Represents a link on a <span class='object_link'><a href="NavListDrop.html" title="NavListDrop (class)">NavListDrop</a></span>.</p>
 
 
   </div>
@@ -151,12 +149,14 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>If this is the active link.</p>
+</div></span>
   
 </li>
 
       
-        <li class="public ">
+        <li class="public deprecated">
   <span class="summary_signature">
     
       <a href="#child_active%3F-instance_method" title="#child_active? (instance method)">#<strong>child_active?</strong>  &#x21d2; Boolean </a>
@@ -169,11 +169,13 @@
   
   
   
-  
+  <span class="deprecated note title">deprecated</span>
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>No longer used</p>
+</div></span>
   
 </li>
 
@@ -181,7 +183,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#children-instance_method" title="#children (instance method)">#<strong>children</strong>  &#x21d2; Object </a>
+      <a href="#children-instance_method" title="#children (instance method)">#<strong>children</strong>  &#x21d2; Array&lt;NavListLinkDrop&gt; </a>
     
 
     
@@ -217,7 +219,33 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>If this link is only conditionally visible to the current logged in user/member.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#home_page%3F-instance_method" title="#home_page? (instance method)">#<strong>home_page?</strong>  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>No longer used</p>
+</div></span>
   
 </li>
 
@@ -225,7 +253,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#home_page%3F-instance_method" title="#home_page? (instance method)">#<strong>home_page?</strong>  &#x21d2; Object </a>
+      <a href="#identifier-instance_method" title="#identifier (instance method)">#<strong>identifier</strong>  &#x21d2; String </a>
     
 
     
@@ -239,7 +267,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Generated from either the slug, or the id of an object it points to or the external url.</p>
+</div></span>
   
 </li>
 
@@ -247,51 +277,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#icon-instance_method" title="#icon (instance method)">#<strong>icon</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#identifier-instance_method" title="#identifier (instance method)">#<strong>identifier</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#label-instance_method" title="#label (instance method)">#<strong>label</strong>  &#x21d2; Object </a>
+      <a href="#label-instance_method" title="#label (instance method)">#<strong>label</strong>  &#x21d2; String </a>
     
 
     
@@ -327,7 +313,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>If any of it&#39;s descendants is the active link.</p>
+</div></span>
   
 </li>
 
@@ -335,7 +323,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#page-instance_method" title="#page (instance method)">#<strong>page</strong>  &#x21d2; Object </a>
+      <a href="#page-instance_method" title="#page (instance method)">#<strong>page</strong>  &#x21d2; PageDrop </a>
     
 
     
@@ -349,7 +337,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>This is only present if the link points to a site&#39;s page.</p>
+</div></span>
   
 </li>
 
@@ -357,7 +347,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#type-instance_method" title="#type (instance method)">#<strong>type</strong>  &#x21d2; Object </a>
+      <a href="#type-instance_method" title="#type (instance method)">#<strong>type</strong>  &#x21d2; String </a>
     
 
     
@@ -371,7 +361,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>One of &#39;home&#39;, &#39;page&#39;, &#39;catalog&#39;, &#39;product_category&#39;, &#39;product&#39;, &#39;list&#39;, &#39;blog&#39;, &#39;members&#39;, &#39;external&#39;, &#39;support&#39;, &#39;terms&#39;, &#39;course&#39;, &#39;site_group&#39;, &#39;page_anchor&#39;.</p>
+</div></span>
   
 </li>
 
@@ -379,7 +371,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#url-instance_method" title="#url (instance method)">#<strong>url</strong>  &#x21d2; Object </a>
+      <a href="#url-instance_method" title="#url (instance method)">#<strong>url</strong>  &#x21d2; String </a>
     
 
     
@@ -393,7 +385,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>The URL this link points to.</p>
+</div></span>
   
 </li>
 
@@ -422,6 +416,8 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>If this is the active link</p>
+
 
   </div>
 </div>
@@ -455,7 +451,12 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>No longer used</p>
+</div></div>
+
+<p>If one of it&#39;s direct descendants is the active link</p>
+
 
   </div>
 </div>
@@ -481,13 +482,35 @@
       <div class="method_details ">
   <h3 class="signature " id="children-instance_method">
   
-    #<strong>children</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>children</strong>  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="" title="NavListLinkDrop (class)">NavListLinkDrop</a></span>&gt;</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="NavListLinkDrop (class)">NavListLinkDrop</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
@@ -502,6 +525,8 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>If this link is only conditionally visible to the current logged in user/member</p>
+
 
   </div>
 </div>
@@ -527,49 +552,110 @@
       <div class="method_details ">
   <h3 class="signature " id="home_page?-instance_method">
   
-    #<strong>home_page?</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>home_page?</strong>  &#x21d2; <tt>Boolean</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>No longer used</p>
+</div></div>
+
+<p>If this link points to the home page of the site</p>
+
+
+  </div>
 </div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="icon-instance_method">
+<div class="tags">
   
-    #<strong>icon</strong>  &#x21d2; <tt>Object</tt> 
+<p class="tag_title">Returns:</p>
+<ul class="return">
   
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
 
-  
-
-  
-</h3>
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="identifier-instance_method">
   
-    #<strong>identifier</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>identifier</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Generated from either the slug, or the id of an object it points to or the external url</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="label-instance_method">
   
-    #<strong>label</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>label</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
@@ -584,6 +670,8 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>If any of it&#39;s descendants is the active link</p>
+
 
   </div>
 </div>
@@ -609,37 +697,109 @@
       <div class="method_details ">
   <h3 class="signature " id="page-instance_method">
   
-    #<strong>page</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>page</strong>  &#x21d2; <tt><span class='object_link'><a href="PageDrop.html" title="PageDrop (class)">PageDrop</a></span></tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This is only present if the link points to a site&#39;s page</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PageDrop.html" title="PageDrop (class)">PageDrop</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="type-instance_method">
   
-    #<strong>type</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>type</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>One of &#39;home&#39;, &#39;page&#39;, &#39;catalog&#39;, &#39;product_category&#39;, &#39;product&#39;, &#39;list&#39;, &#39;blog&#39;, &#39;members&#39;, &#39;external&#39;, &#39;support&#39;, &#39;terms&#39;, &#39;course&#39;, &#39;site_group&#39;, &#39;page_anchor&#39;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="url-instance_method">
   
-    #<strong>url</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>url</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The URL this link points to. If the link is of the &#39;page_group&#39; <span class='object_link'><a href="#type-instance_method" title="NavListLinkDrop#type (method)">#type</a></span>, this will return the <span class='object_link'><a href="#url-instance_method" title="NavListLinkDrop#url (method)">#url</a></span> from the first link inside its <span class='object_link'><a href="#children-instance_method" title="NavListLinkDrop#children (method)">#children</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
   </div>
@@ -647,7 +807,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Jun 10 13:57:36 2021 by
+  Generated on Fri Jun 11 12:59:29 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-2.6.6).
 </div>

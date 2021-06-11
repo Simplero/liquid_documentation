@@ -106,7 +106,18 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Represents a user-generated comment on a <span class='object_link'><a href="ForumPostDrop.html" title="ForumPostDrop (class)">ForumPostDrop</a></span>, <span class='object_link'><a href="CourseLessonDrop.html" title="CourseLessonDrop (class)">CourseLessonDrop</a></span>, etc.</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -124,7 +135,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#approved%3F-instance_method" title="#approved? (instance method)">#<strong>approved?</strong>  &#x21d2; Object </a>
+      <a href="#approved%3F-instance_method" title="#approved? (instance method)">#<strong>approved?</strong>  &#x21d2; Boolean </a>
     
 
     
@@ -146,7 +157,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#attachments-instance_method" title="#attachments (instance method)">#<strong>attachments</strong>  &#x21d2; Object </a>
+      <a href="#attachments-instance_method" title="#attachments (instance method)">#<strong>attachments</strong>  &#x21d2; Array&lt;SimpleAttachmentDrop&gt; </a>
     
 
     
@@ -168,7 +179,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#commenter-instance_method" title="#commenter (instance method)">#<strong>commenter</strong>  &#x21d2; Object </a>
+      <a href="#commenter-instance_method" title="#commenter (instance method)">#<strong>commenter</strong>  &#x21d2; SiteMemberDrop </a>
     
 
     
@@ -190,7 +201,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#commenter_email-instance_method" title="#commenter_email (instance method)">#<strong>commenter_email</strong>  &#x21d2; Object </a>
+      <a href="#commenter_email-instance_method" title="#commenter_email (instance method)">#<strong>commenter_email</strong>  &#x21d2; String </a>
     
 
     
@@ -212,7 +223,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#commenter_name-instance_method" title="#commenter_name (instance method)">#<strong>commenter_name</strong>  &#x21d2; Object </a>
+      <a href="#commenter_name-instance_method" title="#commenter_name (instance method)">#<strong>commenter_name</strong>  &#x21d2; String </a>
     
 
     
@@ -234,7 +245,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#commenter_path-instance_method" title="#commenter_path (instance method)">#<strong>commenter_path</strong>  &#x21d2; Object </a>
+      <a href="#commenter_path-instance_method" title="#commenter_path (instance method)">#<strong>commenter_path</strong>  &#x21d2; String </a>
     
 
     
@@ -256,7 +267,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#commenter_url-instance_method" title="#commenter_url (instance method)">#<strong>commenter_url</strong>  &#x21d2; Object </a>
+      <a href="#commenter_url-instance_method" title="#commenter_url (instance method)">#<strong>commenter_url</strong>  &#x21d2; String </a>
     
 
     
@@ -278,7 +289,31 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#depth-instance_method" title="#depth (instance method)">#<strong>depth</strong>  &#x21d2; Object </a>
+      <a href="#depth-instance_method" title="#depth (instance method)">#<strong>depth</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Will be 1 if this is a reply to another <span class='object_link'><a href="" title="SiteCommentDrop (class)">SiteCommentDrop</a></span>, 0 otherwise.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#file_attachments-instance_method" title="#file_attachments (instance method)">#<strong>file_attachments</strong>  &#x21d2; Array&lt;SimpleAttachmentDrop&gt; </a>
     
 
     
@@ -300,7 +335,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#file_attachments-instance_method" title="#file_attachments (instance method)">#<strong>file_attachments</strong>  &#x21d2; Object </a>
+      <a href="#id-instance_method" title="#id (instance method)">#<strong>id</strong>  &#x21d2; Integer </a>
     
 
     
@@ -322,29 +357,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#id-instance_method" title="#id (instance method)">#<strong>id</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#image_attachments-instance_method" title="#image_attachments (instance method)">#<strong>image_attachments</strong>  &#x21d2; Object </a>
+      <a href="#image_attachments-instance_method" title="#image_attachments (instance method)">#<strong>image_attachments</strong>  &#x21d2; Array&lt;SimpleAttachmentDrop&gt; </a>
     
 
     
@@ -380,7 +393,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns true if this has not been read by the current <span class='object_link'><a href="SiteMemberDrop.html" title="SiteMemberDrop (class)">SiteMemberDrop</a></span>.</p>
+</div></span>
   
 </li>
 
@@ -388,7 +403,31 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#parent_id-instance_method" title="#parent_id (instance method)">#<strong>parent_id</strong>  &#x21d2; Object </a>
+      <a href="#parent_id-instance_method" title="#parent_id (instance method)">#<strong>parent_id</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Refers to the <span class='object_link'><a href="" title="SiteCommentDrop (class)">SiteCommentDrop</a></span> replied to, if this is a reply.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#path-instance_method" title="#path (instance method)">#<strong>path</strong>  &#x21d2; String </a>
     
 
     
@@ -410,7 +449,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#path-instance_method" title="#path (instance method)">#<strong>path</strong>  &#x21d2; Object </a>
+      <a href="#posted_at-instance_method" title="#posted_at (instance method)">#<strong>posted_at</strong>  &#x21d2; DateTime </a>
     
 
     
@@ -432,29 +471,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#posted_at-instance_method" title="#posted_at (instance method)">#<strong>posted_at</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#reaction_count-instance_method" title="#reaction_count (instance method)">#<strong>reaction_count</strong>  &#x21d2; Object </a>
+      <a href="#reaction_count-instance_method" title="#reaction_count (instance method)">#<strong>reaction_count</strong>  &#x21d2; Integer </a>
     
 
     
@@ -490,7 +507,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns true if a form should be rendered to reply to this comment.</p>
+</div></span>
   
 </li>
 
@@ -520,7 +539,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#reply_count-instance_method" title="#reply_count (instance method)">#<strong>reply_count</strong>  &#x21d2; Object </a>
+      <a href="#reply_count-instance_method" title="#reply_count (instance method)">#<strong>reply_count</strong>  &#x21d2; Integer </a>
     
 
     
@@ -564,7 +583,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#url-instance_method" title="#url (instance method)">#<strong>url</strong>  &#x21d2; Object </a>
+      <a href="#url-instance_method" title="#url (instance method)">#<strong>url</strong>  &#x21d2; String </a>
     
 
     
@@ -600,139 +619,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="approved?-instance_method">
   
-    #<strong>approved?</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="attachments-instance_method">
-  
-    #<strong>attachments</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="commenter-instance_method">
-  
-    #<strong>commenter</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="commenter_email-instance_method">
-  
-    #<strong>commenter_email</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="commenter_name-instance_method">
-  
-    #<strong>commenter_name</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="commenter_path-instance_method">
-  
-    #<strong>commenter_path</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="commenter_url-instance_method">
-  
-    #<strong>commenter_url</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="depth-instance_method">
-  
-    #<strong>depth</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="file_attachments-instance_method">
-  
-    #<strong>file_attachments</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="id-instance_method">
-  
-    #<strong>id</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="image_attachments-instance_method">
-  
-    #<strong>image_attachments</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="new?-instance_method">
-  
-    #<strong>new?</strong>  &#x21d2; <tt>Boolean</tt> 
+    #<strong>approved?</strong>  &#x21d2; <tt>Boolean</tt> 
   
 
   
@@ -764,51 +651,519 @@
 </div>
     
       <div class="method_details ">
+  <h3 class="signature " id="attachments-instance_method">
+  
+    #<strong>attachments</strong>  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="SimpleAttachmentDrop.html" title="SimpleAttachmentDrop (class)">SimpleAttachmentDrop</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="SimpleAttachmentDrop.html" title="SimpleAttachmentDrop (class)">SimpleAttachmentDrop</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="commenter-instance_method">
+  
+    #<strong>commenter</strong>  &#x21d2; <tt><span class='object_link'><a href="SiteMemberDrop.html" title="SiteMemberDrop (class)">SiteMemberDrop</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SiteMemberDrop.html" title="SiteMemberDrop (class)">SiteMemberDrop</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="commenter_email-instance_method">
+  
+    #<strong>commenter_email</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="commenter_name-instance_method">
+  
+    #<strong>commenter_name</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="commenter_path-instance_method">
+  
+    #<strong>commenter_path</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="commenter_url-instance_method">
+  
+    #<strong>commenter_url</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="depth-instance_method">
+  
+    #<strong>depth</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Will be 1 if this is a reply to another <span class='object_link'><a href="" title="SiteCommentDrop (class)">SiteCommentDrop</a></span>, 0 otherwise.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="file_attachments-instance_method">
+  
+    #<strong>file_attachments</strong>  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="SimpleAttachmentDrop.html" title="SimpleAttachmentDrop (class)">SimpleAttachmentDrop</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="SimpleAttachmentDrop.html" title="SimpleAttachmentDrop (class)">SimpleAttachmentDrop</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="id-instance_method">
+  
+    #<strong>id</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="image_attachments-instance_method">
+  
+    #<strong>image_attachments</strong>  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="SimpleAttachmentDrop.html" title="SimpleAttachmentDrop (class)">SimpleAttachmentDrop</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="SimpleAttachmentDrop.html" title="SimpleAttachmentDrop (class)">SimpleAttachmentDrop</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="new?-instance_method">
+  
+    #<strong>new?</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns true if this has not been read by the current <span class='object_link'><a href="SiteMemberDrop.html" title="SiteMemberDrop (class)">SiteMemberDrop</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
   <h3 class="signature " id="parent_id-instance_method">
   
-    #<strong>parent_id</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>parent_id</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Refers to the <span class='object_link'><a href="" title="SiteCommentDrop (class)">SiteCommentDrop</a></span> replied to, if this is a reply.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="path-instance_method">
   
-    #<strong>path</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>path</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="posted_at-instance_method">
   
-    #<strong>posted_at</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>posted_at</strong>  &#x21d2; <tt>DateTime</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>DateTime</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="reaction_count-instance_method">
   
-    #<strong>reaction_count</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>reaction_count</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
@@ -823,6 +1178,8 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>Returns true if a form should be rendered to reply to this comment.</p>
+
 
   </div>
 </div>
@@ -882,13 +1239,35 @@
       <div class="method_details ">
   <h3 class="signature " id="reply_count-instance_method">
   
-    #<strong>reply_count</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>reply_count</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
@@ -928,13 +1307,35 @@
       <div class="method_details ">
   <h3 class="signature " id="url-instance_method">
   
-    #<strong>url</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>url</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
   </div>
@@ -942,7 +1343,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Jun 10 13:57:36 2021 by
+  Generated on Fri Jun 11 12:59:29 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-2.6.6).
 </div>

@@ -103,7 +103,18 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Represents a form field on the embedded landing page editor This inherits from <span class='object_link'><a href="FormFieldDrop.html" title="FormFieldDrop (class)">FormFieldDrop</a></span>. The methods overridden here are only called from the editor on the admin side.</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -121,7 +132,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#content-instance_method" title="#content (instance method)">#<strong>content</strong>  &#x21d2; Object </a>
+      <a href="#content-instance_method" title="#content (instance method)">#<strong>content</strong>  &#x21d2; String </a>
     
 
     
@@ -135,7 +146,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Renders the label of the form field in an editable input.</p>
+</div></span>
   
 </li>
 
@@ -143,7 +156,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#control-instance_method" title="#control (instance method)">#<strong>control</strong>  &#x21d2; Object </a>
+      <a href="#control-instance_method" title="#control (instance method)">#<strong>control</strong>  &#x21d2; String </a>
     
 
     
@@ -157,7 +170,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Renders the HTML control (textarea, select tag, etc) of the form field.</p>
+</div></span>
   
 </li>
 
@@ -165,7 +180,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#control_with_placeholder-instance_method" title="#control_with_placeholder (instance method)">#<strong>control_with_placeholder</strong>  &#x21d2; Object </a>
+      <a href="#control_with_placeholder-instance_method" title="#control_with_placeholder (instance method)">#<strong>control_with_placeholder</strong>  &#x21d2; String </a>
     
 
     
@@ -179,7 +194,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Renders the HTML control (textarea, select tag, etc) of the form field with the placeholder that&#39;ll be shown when the landing page is rendered to the users.</p>
+</div></span>
   
 </li>
 
@@ -187,7 +204,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#label-instance_method" title="#label (instance method)">#<strong>label</strong>  &#x21d2; Object </a>
+      <a href="#label-instance_method" title="#label (instance method)">#<strong>label</strong>  &#x21d2; String </a>
     
 
     
@@ -201,7 +218,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Renders the current label of the form field in an editable input.</p>
+</div></span>
   
 </li>
 
@@ -230,49 +249,145 @@
       <div class="method_details first">
   <h3 class="signature first" id="content-instance_method">
   
-    #<strong>content</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>content</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renders the label of the form field in an editable input</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="control-instance_method">
   
-    #<strong>control</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>control</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renders the HTML control (textarea, select tag, etc) of the form field</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="control_with_placeholder-instance_method">
   
-    #<strong>control_with_placeholder</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>control_with_placeholder</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renders the HTML control (textarea, select tag, etc) of the form field with the placeholder that&#39;ll be shown when the landing page is rendered to the users. The placeholder value in many cases will be editable inline as you are editing the form in admin.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
       <div class="method_details ">
   <h3 class="signature " id="label-instance_method">
   
-    #<strong>label</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>label</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renders the current label of the form field in an editable input</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
   </div>
@@ -280,7 +395,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Jun 10 13:57:37 2021 by
+  Generated on Fri Jun 11 12:59:30 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-2.6.6).
 </div>
