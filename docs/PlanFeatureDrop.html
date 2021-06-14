@@ -101,7 +101,18 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Represents a feature with in a Simplero plan</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -143,7 +154,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#description-instance_method" title="#description (instance method)">#<strong>description</strong>  &#x21d2; Object </a>
+      <a href="#description-instance_method" title="#description (instance method)">#<strong>description</strong>  &#x21d2; String </a>
     
 
     
@@ -165,7 +176,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#name-instance_method" title="#name (instance method)">#<strong>name</strong>  &#x21d2; Object </a>
+      <a href="#name-instance_method" title="#name (instance method)">#<strong>name</strong>  &#x21d2; String </a>
     
 
     
@@ -187,7 +198,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#type-instance_method" title="#type (instance method)">#<strong>type</strong>  &#x21d2; Object </a>
+      <a href="#type-instance_method" title="#type (instance method)">#<strong>type</strong>  &#x21d2; String </a>
     
 
     
@@ -202,7 +213,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>type:          value: checkmark      always / annual_only storage        amount number         0 = sandbox, nil = unlimited, show number.</p>
+<p>Returns one of &#39;storage&#39;, &#39;checkmark&#39; or &#39;number&#39;.</p>
 </div></span>
   
 </li>
@@ -211,7 +222,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#value-instance_method" title="#value (instance method)">#<strong>value</strong>  &#x21d2; Object </a>
+      <a href="#value-instance_method" title="#value (instance method)">#<strong>value</strong>  &#x21d2; Boolean </a>
     
 
     
@@ -279,31 +290,7 @@
       <div class="method_details ">
   <h3 class="signature " id="description-instance_method">
   
-    #<strong>description</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="name-instance_method">
-  
-    #<strong>name</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="type-instance_method">
-  
-    #<strong>type</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>description</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -312,13 +299,94 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>type:          value: checkmark      always / annual_only storage        amount number         0 = sandbox, nil = unlimited, show number</p>
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="name-instance_method">
+  
+    #<strong>name</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="type-instance_method">
+  
+    #<strong>type</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns one of &#39;storage&#39;, &#39;checkmark&#39; or &#39;number&#39;</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
 
 </div>
 </div>
@@ -326,13 +394,35 @@
       <div class="method_details ">
   <h3 class="signature " id="value-instance_method">
   
-    #<strong>value</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>value</strong>  &#x21d2; <tt>Boolean</tt> 
   
 
   
 
   
-</h3>
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
 </div>
     
   </div>
@@ -340,7 +430,7 @@
 </div>
 
       <div id="footer">
-  Generated on Fri Jun 11 12:59:29 2021 by
+  Generated on Mon Jun 14 14:30:12 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-2.6.6).
 </div>
