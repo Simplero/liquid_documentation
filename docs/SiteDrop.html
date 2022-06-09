@@ -93,7 +93,7 @@
   
   <dl>
       <dt>Includes:</dt>
-      <dd>NotificationSettingProvidingDropConcern, SiteMemberConcerns</dd>
+      <dd>NotificationSettingProvidingDropConcern</dd>
   </dl>
   
   
@@ -134,7 +134,7 @@
 
     <ul class="summary">
       
-        <li class="public ">
+        <li class="public deprecated">
   <span class="summary_signature">
     
       <a href="#allow_blog_comments%3F-instance_method" title="#allow_blog_comments? (instance method)">#<strong>allow_blog_comments?</strong>  &#x21d2; Boolean </a>
@@ -147,11 +147,13 @@
   
   
   
-  
+  <span class="deprecated note title">deprecated</span>
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="BlogPostDrop.html#allow_comments%3F-instance_method" title="BlogPostDrop#allow_comments? (method)">BlogPostDrop#allow_comments?</a></span></p>
+</div></span>
   
 </li>
 
@@ -322,6 +324,28 @@
   <span class="summary_signature">
     
       <a href="#collapse_comments%3F-instance_method" title="#collapse_comments? (instance method)">#<strong>collapse_comments?</strong>  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#comment_notification_setting-instance_method" title="#comment_notification_setting (instance method)">#<strong>comment_notification_setting</strong>  &#x21d2; NotificationSettingDrop </a>
     
 
     
@@ -1437,7 +1461,6 @@
   
   
   
-  
   <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Liquid/Simplero/Drop.html" title="Liquid::Simplero::Drop (class)">Liquid::Simplero::Drop</a></span></h3>
   <p class="inherited"><span class='object_link'><a href="Liquid/Simplero/Drop.html#dom_id-instance_method" title="Liquid::Simplero::Drop#dom_id (method)">#dom_id</a></span></p>
 
@@ -1458,7 +1481,10 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="BlogPostDrop.html#allow_comments%3F-instance_method" title="BlogPostDrop#allow_comments? (method)">BlogPostDrop#allow_comments?</a></span></p>
+</div></div>
+
 
   </div>
 </div>
@@ -1753,6 +1779,40 @@
       
       
         <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="comment_notification_setting-instance_method">
+  
+    #<strong>comment_notification_setting</strong>  &#x21d2; <tt><span class='object_link'><a href="NotificationSettingDrop.html" title="NotificationSettingDrop (class)">NotificationSettingDrop</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="NotificationSettingDrop.html" title="NotificationSettingDrop (class)">NotificationSettingDrop</a></span></tt>)</span>
       
       
       
@@ -3428,9 +3488,9 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Aug  4 15:51:18 2021 by
+  Generated on Thu Jun  9 10:22:04 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.26 (ruby-2.6.6).
+  0.9.26 (ruby-2.7.6).
 </div>
 
     </div>

@@ -109,11 +109,14 @@
 <pre class="code ruby"><code class="ruby">{% rich_text_editor name %}
 {% rich_text_editor name always_blank %}
 {% rich_text_editor name placeholder=&quot;value&quot; %}
+{% rich_text_editor name allow_attachments=&quot;false&quot; %}
 </code></pre>
 
 <p><code>always_blank</code> - always initialize as blank rather than reading from the current context for a value.</p>
 
 <p><code>placeholder</code> - value for HTML placeholder attribute. Can be Liquid code e.g. <tt>{{&#39;foo&#39;|translate}}</tt></p>
+
+<p><code>allow_attachments</code> - allow/disallow attachemnts for comment, could be true(default) or false.</p>
 
 
   </div>
@@ -121,7 +124,11 @@
 <div class="tags">
   
 
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="RichOrPlainTextEditor.html" title="Liquid::Simplero::Tags::RichOrPlainTextEditor (class)">RichOrPlainTextEditor</a></span></p>
 </div>
+
 
 
 
@@ -134,9 +141,9 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Aug  4 15:51:20 2021 by
+  Generated on Thu Jun  9 10:22:07 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.26 (ruby-2.6.6).
+  0.9.26 (ruby-2.7.6).
 </div>
 
     </div>
